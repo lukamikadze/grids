@@ -1,0 +1,276 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.grid{
+  background-color: coral;
+  display: grid;
+  height: 80vh;
+  width: 80vw;
+  margin: 0px auto;
+  margin-top: 100px;
+  border: 2px solid black;
+  grid-template-rows: 50px 1fr 1fr 1fr 50Px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.item{
+  background-color: aqua;
+  display: grid;
+  place-items: center;
+}
+
+.header{
+  grid-column: 1/5 ;
+  grid-row: 1/2;
+  background-color: aqua;
+}
+.sidebar{
+  grid-column: 1/2;
+  grid-row: 2/5;
+  background-color: greenyellow;
+}
+.title{
+  grid-column: 2/5;
+  grid-row:2/3;
+  background-color: pink;
+}
+.arcone{
+  grid-column: 2/3;
+  grid-row: 3/5;
+  background-color: rgb(236, 133, 150);
+}
+.arctwo{
+  grid-column: 3/4;
+  grid-row: 3/5;
+  background-color: rgb(236, 79, 106);
+}
+.arcthree{
+  grid-column: 4/5;
+  grid-row: 3/5;
+  background-color: rgb(241, 28, 63);
+}
+.footer{
+  grid-column: 1/5;
+  grid-row: 5/6;
+  background-color: aqua;
+}
+
+  .second-grid{
+    background-color: coral;
+    display: grid;
+    height: 80vh;
+    width: 80vw;
+    margin: 0px auto;
+    margin-top: 100px;
+    border: 2px solid black;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+.box{
+  background-color: aqua;
+  display: grid;
+  place-items: center;
+}
+.one{
+  grid-column: 1/3;
+  grid-row: 1/2;
+  background-color: yellow;
+}
+.two{
+  grid-column: 3/4;
+  grid-row: 1/2;
+  background-color: rgb(86, 219, 86);
+}
+.three{
+  grid-column: 1/2;
+  grid-row: 2/3;
+  background-color: rgb(86, 219, 86);
+}
+.four{
+  grid-column: 2/4;
+  grid-row: 2/4;
+  background-color: rgb(234, 101, 101);
+}
+.five{
+  grid-column: 1/2;
+  grid-row: 3/5;
+  background-color: yellow;
+}
+.six{
+  grid-column: 2/3;
+  grid-row: 4/5;
+  background-color: rgb(86, 219, 86);
+}
+.seven{
+  grid-column: 3/4;
+  grid-row: 4/5;
+  background-color: rgb(86, 219, 86);
+}
+.eight{
+  grid-column: 1/2;
+  grid-row: 5/6;
+  background-color: rgb(86, 219, 86);
+}
+.nine{
+  grid-column: 2/3;
+  grid-row: 5/6;
+  background-color: rgb(86, 219, 86);
+}
+.ten{
+  grid-column: 3/4;
+  grid-row: 5/6;
+  background-color: rgb(86, 219, 86);
+}
+
+.third-grid{
+    background-color: white;
+    display: grid;
+    height: 80vh;
+    width: 80vw;
+    margin: 0px auto;
+    margin-top: 100px;
+    border: 2px solid black;
+    gap: 10px;
+}
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: grey;
+}
+
+.third-grid {
+  display: grid;
+  gap: 10px;
+}
+
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+  .third-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+  .first{
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+  .second{
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  .third{
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  .fourth{
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .fifth{
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .sixth{
+    grid-column: 2/4;
+    grid-row: 3/5;
+  }
+  .seventh{
+    grid-column: 1/3;
+    grid-row: 5/7;
+  }
+  .eighth{
+    grid-column: 3/4;
+    grid-row: 5/6;
+  }
+  .ninth{
+    grid-column: 3/4;
+    grid-row: 6/7;
+  }
+  .tenth{
+    display: none;
+  }
+  .eleventh{
+    display: none;
+  }
+  .twelfth{
+    display: none;
+  }
+  .thirteenth{
+    display: none;
+  }
+  .fourteenth{
+    display: none;
+  }
+  .fifteenth{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .third-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+  .first{
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+  .second{
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  .third{
+    grid-column: 4/5;
+    grid-row: 1/2;
+  }
+  .fourth{
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  .fifth{
+    grid-column: 4/5;
+    grid-row: 2/3;
+  }
+  .sixth{
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .seventh{
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .eighth{
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .ninth{
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+  .tenth{
+    grid-column: 3/5;
+    grid-row: 3/5;
+  }
+  .eleventh{
+    grid-column: 1/3;
+    grid-row: 5/7;
+  }
+  .twelfth{
+    grid-column: 3/4;
+    grid-row: 5/6;
+  }
+  .thirteenth{
+    grid-column: 4/5;
+    grid-row: 5/6;
+  }
+  .fourteenth{
+    grid-column: 3/4;
+    grid-row: 6/7;
+  }
+  .fifteenth{
+    grid-column: 4/5;
+    grid-row: 6/7;
+  }
+}
